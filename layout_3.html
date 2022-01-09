@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout 3</title>
+    <style>
+        /* Large devices (laptops/desktops, 992px and up) */
+        @media only screen and (min-width: 1022px) {
+            #main{
+                width: 100%;
+                height: auto;
+                margin-top: 10px;
+            }
+            .yellow-box{
+                width: 100%;
+                height: 100px;
+                background-color: yellow;
+                font-size: 50px;
+            }
+            .red-box{
+                width: 55%;
+                height: 600px;
+                background-color: red;
+                margin-top: 20px;
+                float: left;
+                font-size: 30px;
+            }
+            .lime-box-outer{
+                float: left;
+                width: 630px;
+                height: 620px;
+                margin-left: 30px;
+            }
+            .lime{
+                width: 100%;
+                height: 30%;
+                font-size: 30px;
+                margin-top: 20px;
+                background-color: lime;
+            }
+        }
+
+        /* Medium devices (landscape tablets, 768px and up) */
+        @media only screen and (max-width: 768px) {
+            #main{
+                width: 100%;
+                height: auto;
+                margin-top: 10px;
+            }
+            .yellow-box{
+                width: 100%;
+                height: 80px;
+                background-color: yellow;
+                font-size: 50px;
+            }
+            .red-box{
+                width: 100%;
+                height: 300px;
+                background-color: red;
+                margin-top: 20px;
+                font-size: 30px;
+            }
+            .lime-box-outer{
+                width: 100%;
+                height: 630px;
+            }
+            .lime{
+                width: 29%;
+                height: 30%;
+                float: left;
+                font-size: 30px;
+                margin-top: 20px;
+                background-color: lime;
+            }
+            .margin{
+                margin-left: 48px;
+            }
+        }
+        /* Small devices (portrait tablets and large phones, 600px and up) */
+        @media only screen and (max-width: 600px) {
+            #main{
+                width: 100%;
+                height: auto;
+                margin-top: 10px;
+            }
+            .yellow-box{
+                width: 100%;
+                height: 50px;
+                background-color: yellow;
+                font-size: 30px;
+            }
+            .red-box{
+                width: 100%;
+                height: 200px;
+                background-color: red;
+                margin-top: 20px;
+                font-size: 20px;
+            }
+            .lime-box-outer{
+                width: 100%;
+                height: 300px;
+            }
+            .lime{
+                width: 100%;
+                clear: both;
+                height: 30%;
+                font-size: 20px;
+                margin-top: 10px;
+                background-color: lime;
+            }
+            .margin{
+                margin-left: 0px;
+            }
+        }
+        
+
+    </style>
+</head>
+<body>
+        <div id="main">
+            <div class="yellow-box">Navigation</div>
+            <div class="red-box">LEFT BOX</div>
+            <div class="lime-box-outer">
+                <div class="lime">RIGHT BOX 1</div>
+                <div class="lime margin">RIGHT BOX 2</div>
+                <div class="lime margin">RIGHT BOX 3</div>
+            </div>
+        </div>
+</body>
+</html>
